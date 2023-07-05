@@ -1,5 +1,5 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #e6e6e6;
     font-family: Arial, sans-serif;
     padding: 50px;
     text-align: center;
@@ -7,6 +7,11 @@ body {
 
 h1 {
     color: #333;
+    background-color: #916767; /* Background color for the heading */
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px; /* Rounded Edges */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow box for the heading */
 }
 
 button {
@@ -17,13 +22,23 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Added shadow box */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    transform: scale(1.05); /* Button enlarges on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow box on hover */
 }
 
 p {
     color: #000000;
     font-size: 30px;
     margin-top: 20px;
-    font-style: bold;
+}
+
+img {
+    margin-bottom: 25px;
 }
 
 img:hover {
@@ -31,8 +46,6 @@ img:hover {
     filter: hue-rotate(30deg);
     filter: saturate(200%);
   }
-
-
 
 /* Responsive design rules */
 @media (min-width: 600px) {
