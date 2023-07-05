@@ -46,3 +46,5 @@ document.getElementById('generate').addEventListener('click', function() {
 
     document.getElementById('password').innerText = password;
 });
+
+//Adding a shuffle feature wouldn't be a bad idea for next time in the case of seeing a pattern for how the first four characters are generated.
